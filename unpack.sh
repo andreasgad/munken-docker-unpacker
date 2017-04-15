@@ -1,6 +1,6 @@
-for i in /data/*.lmd.gz
+for i in ${INPUT_DIR}/*.lmd.gz
 do
     filename=$(basename "$i")
     f="${filename%%.*}"
-    /MBS-unpacker/mbs/MBS_unpacker $i --ntuple=RAW,/data/$f.root
+    ${UNPACKER} $i --ntuple=RAW,${OUTPUTPUT_DIR}/$f.root
 done
