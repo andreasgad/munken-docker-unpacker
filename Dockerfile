@@ -2,12 +2,14 @@ FROM munken/ucesb
 
 
 RUN git clone https://Munken@git.kern.phys.au.dk/ausa/MBS-unpacker.git \
-    && make -C MBS-unpacker mbs 
+    && cd MBS-unpacker \
+    && git checkout is633 \
+    && make mbs 
 
 COPY unpack.sh /
 
 ENV INPUT_DIR=/data
 ENV OUTPUT_DIR=/output
-ENV UNPACKER=/MBS-unpacker/mbs/MBS_unpacker
+ENV UNPACKER=/MBS-unpacker/MBS_unpacker
 
 CMD /unpack.sh 
