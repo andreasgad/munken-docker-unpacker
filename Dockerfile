@@ -3,7 +3,7 @@ FROM munken/ucesb
 
 RUN git clone https://Munken@git.kern.phys.au.dk/ausa/MBS-unpacker.git \
     && cd MBS-unpacker \
-    && git checkout is633 \
+    && git checkout is619 \
     && make mbs 
 
 COPY unpack.sh /
