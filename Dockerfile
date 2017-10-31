@@ -10,6 +10,6 @@ COPY unpack.sh /
 
 ENV INPUT_DIR=/data
 ENV OUTPUT_DIR=/output
-ENV UNPACKER=/MBS-unpacker/MBS_unpacker
+ENV UNPACKER=/MBS-unpacker/mbs/MBS_unpacker
 
 CMD /unpack.sh 
