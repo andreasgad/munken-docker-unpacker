@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Force build
 
 UNPACKER1="/unpacker/is561c/is561c/MBS_unpacker"
