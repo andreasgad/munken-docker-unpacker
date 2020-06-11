@@ -3,7 +3,7 @@ FROM munken/ucesb
 
  
 RUN git clone https://gitlab.au.dk/ausa/unpacker.git \
-    && git pull &&  make -C unpacker/i257 mbs 
+    && git -C unpacker/ pull &&  make -C unpacker/i257 mbs 
 COPY unpack.sh /
 
 ENV INPUT_DIR=/data
