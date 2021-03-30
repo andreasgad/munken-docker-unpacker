@@ -1,4 +1,4 @@
-FROM ausadocker/ucesb
+FROM munken/ucesb
 
 
 RUN git clone https://gitlab.au.dk/ausa/mbs-unpacker.git \
