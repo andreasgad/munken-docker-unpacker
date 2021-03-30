@@ -1,7 +1,7 @@
-FROM munken/ucesb
+FROM ausadocker/ucesb
 
 
-RUN git clone https://Munken@git.kern.phys.au.dk/ausa/MBS-unpacker.git \
+RUN git clone https://https://gitlab.au.dk/ausa/mbs-unpacker.git \
     && make -C MBS-unpacker mbs 
 
 COPY unpack.sh /
