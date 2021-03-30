@@ -1,7 +1,7 @@
 FROM munken/ucesb
 
 
-RUN git clone https://Munken@git.kern.phys.au.dk/ausa/unpacker.git \
+RUN git clone https://gitlab.au.dk/ausa/unpacker.git \
     && make -C unpacker/basement-shadow mbs 
 
 COPY unpack.sh /
