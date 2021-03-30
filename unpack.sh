@@ -1,4 +1,3 @@
-#Trigger
 for i in ${INPUT_DIR}/*.lmd.gz
 do
     filename=$(basename "$i")
