@@ -1,7 +1,7 @@
 FROM ausadocker/ucesb
 
 
-RUN git clone https://https://gitlab.au.dk/ausa/mbs-unpacker.git \
+RUN git clone https://http://gitlab.au.dk/ausa/mbs-unpacker.git \
     && make -C MBS-unpacker mbs 
 
 COPY unpack.sh /
