@@ -11,4 +11,3 @@ ENV OUTPUT_DIR=/output
 ENV UNPACKER=/mbs-unpacker/mbs/MBS_unpacker
 
 CMD /unpack.sh 
-
