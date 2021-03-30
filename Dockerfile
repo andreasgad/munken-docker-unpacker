@@ -1,8 +1,8 @@
 # Unpacker for snowfox DAQ
-FROM munken/ucesb
+FROM ausadocker/ucesb
 
 
-RUN git clone https://Munken@git.kern.phys.au.dk/ausa/unpacker.git \
+RUN git clone https://gitlab.au.dk/ausa/unpacker.git \
     && make -C unpacker/basement-shadow mbs 
 
 COPY unpack.sh /
