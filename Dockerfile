@@ -1,8 +1,8 @@
-FROM munken/ucesb
+FROM ausadocker/ucesb
 
 ENV UCESB_BASE_DIR=/ucesb
 
-RUN git clone https://Munken@git.kern.phys.au.dk/ausa/unpacker.git \
+RUN git clone https://gitlab.au.dk/ausa/unpacker.git \
     && cd unpacker \
     && git checkout master \
     && cd is561c/is561c \
